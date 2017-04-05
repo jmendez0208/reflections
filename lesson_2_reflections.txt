@@ -4,3 +4,14 @@ Why do you need to do it?
 It is needed for .git to store metadata
 of files, changes, etc.to be able to do
 its work
+
+How is the staging area different from the working directory and the repository?
+It is feature of Git. Files on it are, for sure,
+in the directory, but ready to be commited.
+Only files in staging are are committed.
+
+What value do you think it offers?
+It offers the posibility of
+commiting certain files on the directory
+at once, hence allowing for a "logical commit".
+
