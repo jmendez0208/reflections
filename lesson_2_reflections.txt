@@ -1,0 +1,6 @@
+What happens when you initialize a repository?
+A .git directory is created.
+Why do you need to do it?
+It is needed for .git to store metadata
+of files, changes, etc.to be able to do
+its work
