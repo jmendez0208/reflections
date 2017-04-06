@@ -21,4 +21,33 @@ make sure you have one commit per logical change?
 By adding to the staged area only the files
 related to a logical change and then do the commit
 
+What are some situations when branches would be helpful
+in keeping your history organized? How would branches help?
+
+Branches help in situation where we will add new features,
+or experiment with big changes, but still wanting to have
+something that works. Branches helps because it allows to
+switch between them easily. 
+git branch --> shows branch. Current branch preceded by *
+
+git branch easy_mode --> creates "easy_mode" branch by
+checking out current branch.
+Now we have two branchs
+$ git branch
+   easy_mode
+*  master
+
+git checkout easy_mode --> makes "easy_mode" the
+current branch.
+
+$ git branch
+*   easy_mode
+    master
+//Edit and change a file
+//Add to staging area
+git add game.js
+//commit the change
+git commit -m"Make game simpler"
+
+
 
