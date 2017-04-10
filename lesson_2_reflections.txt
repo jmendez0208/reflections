@@ -39,6 +39,10 @@ $ git branch
 
 git checkout easy_mode --> makes "easy_mode" the
 current branch.
+Note:
+git branch  - "new_branch" create a new branch 
+"new_branch" and makes it the current one.
+(Combines two git commands in one)
 
 $ git branch
 *   easy_mode
@@ -49,5 +53,31 @@ git add game.js
 //commit the change
 git commit -m"Make game simpler"
 
+How do the diagrams help you visualize the branch structure?
+Without a visual diagram it is very difficult to
+grasp the branch structure.
+
+compare a commit to its parent is git show commit_id
+
+What is the result of merging two branches together?
+Why do we represent it in the diagram the way we do?
+
+The changes of two branches are merged on the checkout branch.
+A new commit with two parents because it includes all the 
+commits of the two merged branches. All these commits will
+be ordered in git log by timestamps.
+
+Question: How to list graphs in git log ?
+git --graph
+
+What are the pros and cons of Git’s automatic merging vs.
+always doing merges manually?
+In automatic mode not all conflicts can be resolved.
+Using manual mode we ensure what is correct.
+
+
+
+ 
+ 
 
 
